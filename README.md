@@ -8,7 +8,6 @@ An app that allows you log your mood everyday and keep track of your emotions.
 Uses MongoDB, ExpressJS, Mongoose, and Node.js.
 Uses passport.js for authenticate requests such as passwords and emails.
 
-The app is live here: https://hs-mood.herokuapp.com.
 
 If you want to run it locally, clone this project and install dependencies:
 
