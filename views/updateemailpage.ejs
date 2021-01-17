@@ -1,0 +1,54 @@
+<%- include('common/header2'); %>
+<%- include('common/messages'); %>
+
+<div class="row"> 
+    <div class="col-12">
+        <div class="row">
+            <h1 class="col-12">Change your email address</h1>
+        </div>
+
+        <form class="container-fluid" action="" method = "POST">
+            <div class="row form-group">
+                <label class="sr-only col-12" for="">Old email</label>
+                <input class="form-control col-12" 
+                type="email" 
+
+                name="oldEmail"
+                
+                placeholder="Old Email">
+			</div>
+            
+
+            <div class="row form-group">
+                <label class="sr-only col-12" for="">New email</label>
+                <input class="form-control col-12" 
+                type="email" 
+
+                name="newEmail"
+                
+                placeholder="New Email">
+			</div>
+			
+            <div class="row form-group">
+                <label class="sr-only col-12" for="">Confirm new email</label>
+                <input class="form-control col-12" 
+                type="email" 
+
+                name="newEmail2"
+                
+                placeholder="Confirm New Email">
+			</div>
+
+
+            <div class="row">
+                    <button  class="col-8 offset-2 text-center btn btn-primary">Change email <i
+							class="fa fa-chevron-right"></i> </button>		
+			</div>
+
+        </form>
+
+    </div>
+</div>
+
+
+<%- include('common/footer'); %>

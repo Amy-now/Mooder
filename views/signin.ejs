@@ -1,0 +1,54 @@
+<%- include('common/header'); %>
+<%- include('common/messages'); %>
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <h1 class="col-12">Sign In</h1>
+        </div>
+
+        <form class="container-fluid" action="" method="POST">
+            <div class="row form-group">
+                <label class="sr-only col-12" for="">Email</label>
+                <input 
+                    class="form-control col-12" 
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="email">
+            </div>
+
+            <div class="row form-group">
+                <label class="sr-only col-12" for="">Password</label>
+                <input 
+                    class="form-control col-12" 
+                    type="password" 
+                    id="password"
+                    name="password"
+                    placeholder="Password">
+            </div>
+
+            <div class="row">
+                    <button type="submit" class="col-8 offset-2 text-center btn btn-primary pull-right">Login <i
+                            class="fa fa-chevron-right"></i></button>
+            </div>
+        </form>
+        
+        <div class="row">
+            <p class="col-12"> <br>  </p>   
+        </div>
+
+        <div class="row">
+            <p class="col-12">Create an account?</p>
+        </div>
+        <div class="row">
+            <a type="submit" href="/signup" class="col-2 offset-5 text-center btn btn-primary pull-right"> Sign up! <i class="far fa-smile-beam"></i> </a>
+        </div>
+        
+
+    </div>
+</div>
+
+<!-- col-md-6 col-lg-4 -->
+
+<%- include('common/footer'); %>

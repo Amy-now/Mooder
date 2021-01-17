@@ -1,0 +1,210 @@
+<%- include('common/header2'); %>
+
+    <div class="row">
+        <h1 class="col">Track your mood</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Last 7 days</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Last 30 days</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu3">Report for 30 days</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+                <div id="home" class="container tab-pane active"><br>
+                    <div class="row">
+                        <h3 class="col-1 days">1</h3>
+                        <h3 class="col-1 offset-2 days">2</h3>
+                        <h3 class="col-1 offset-2 days">3</h3>
+                        <h3 class="col-1 offset-2 days">4</h3>
+                    </div>
+
+                    <div class="row">
+                        <button class='col-1' style="padding: 15px 32px; background-color: <%=settings.anxious%>"></button>
+                        <button class=' col-1 offset-2 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                        <button class=' col-1 offset-2 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                        <button class='  col-1 offset-2 ' style="padding: 25px 42px; background-color: <%=settings.anxious%>" ></button>
+                    </div>
+
+
+                    <div class="row">
+                        <h3 class="col-1 days">5</h3>
+                        <h3 class="col-1 offset-2 days">6</h3>
+                        <h3 class="col-1 offset-2 days">7</h3>
+                    </div>
+
+                    <div class="row">
+                        <button class='col-1' style="padding: 15px 32px; background-color: <%=settings.tired%>"></button>
+                        <button class=' col-1 offset-2 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                        <button class=' col-1 offset-2 ' style="padding: 25px 42px; background-color: <%=settings.tired%>" ></button>
+                    </div>
+
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <div id="home" class="container tab-pane active"><br>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">1</h3>
+                            <h3 class="col-1 offset-1 days">2</h3>
+                            <h3 class="col-1 offset-1 days">3</h3>
+                            <h3 class="col-1 offset-1 days">4</h3>
+                            <h3 class="col-1 offset-1 days">5</h3>
+                        </div>
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.anxious%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.anxious%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.anxious%>" ></button>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">6</h3>
+                            <h3 class="col-1 offset-1 days">7</h3>
+                            <h3 class="col-1 offset-1 days">8</h3>
+                            <h3 class="col-1 offset-1 days">9</h3>
+                            <h3 class="col-1 offset-1 days">10</h3>
+                        </div>
+
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.lonely%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.angry%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.angry%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.excited%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.tired%>" ></button>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">11</h3>
+                            <h3 class="col-1 offset-1 days">12</h3>
+                            <h3 class="col-1 offset-1 days">13</h3>
+                            <h3 class="col-1 offset-1 days">14</h3>
+                            <h3 class="col-1 offset-1 days">15</h3>
+                        </div>
+
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.average%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.average%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.average%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.tired%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.tired%>" ></button>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">16</h3>
+                            <h3 class="col-1 offset-1 days">17</h3>
+                            <h3 class="col-1 offset-1 days">18</h3>
+                            <h3 class="col-1 offset-1 days">19</h3>
+                            <h3 class="col-1 offset-1 days">20</h3>
+                        </div>
+
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.happy%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.happy%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.excited%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.happy%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.sad%>" ></button>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">21</h3>
+                            <h3 class="col-1 offset-1 days">22</h3>
+                            <h3 class="col-1 offset-1 days">23</h3>
+                            <h3 class="col-1 offset-1 days">24</h3>
+                            <h3 class="col-1 offset-1 days">25</h3>
+                        </div>
+
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.sad%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.sad%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.tired%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.anxious%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.average%>" ></button>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="col-1 offset-1 days">26</h3>
+                            <h3 class="col-1 offset-1 days">27</h3>
+                            <h3 class="col-1 offset-1 days">28</h3>
+                            <h3 class="col-1 offset-1 days">29</h3>
+                            <h3 class="col-1 offset-1 days">30</h3>
+                        </div>
+
+                        <div class="row">
+                            <button class='col-1 offset-1' style="padding: 15px 32px; background-color: <%=settings.average%>"></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.angry%>" ></button>
+                            <button class=' col-1 offset-1 ' style="padding: 15px 32px; background-color: <%=settings.angry%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.happy%>" ></button>
+                            <button class='  col-1 offset-1 ' style="padding: 25px 42px; background-color: <%=settings.happy%>" ></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu3" class="container tab-pane fade"><br>
+
+                    <div class="row">
+
+                        <div id="piechart" class="col-1" >
+                    
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    
+                        <script type="text/javascript">
+                            // Load google charts
+                            google.charts.load('current', { 'packages': ['corechart'] });
+                            google.charts.setOnLoadCallback(drawChart);
+                    
+                            // Draw the chart and set the chart values
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Task', 'Hours per Day'],
+                                    ['Happy', 7],
+                                    ['Anxious', 4],
+                                    ['Sad', 3],
+                                    ['Excited', 2],
+                                    ['Tired', 4],
+                                    ['Average', 5],
+                                    ['Angry', 4],
+                                    ['Lonely', 1]
+                    
+                                ]);
+                    
+                                
+                                // Optional; add a title and set the width and height of the chart
+                                var options = { 'width': 650, 'height': 400, 
+                                                colors: ['<%=settings.happy%>', '<%=settings.anxious%>', '<%=settings.sad%>', '<%=settings.excited%>', '<%=settings.tired%>', '<%=settings.average%>', '<%=settings.angry%>', '<%=settings.lonely%>' ], 
+                                                pieSliceText: 'none' };
+                    
+                                // Display the chart inside the <div> element with id="piechart"
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                    
+                        </script>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <h2 class="col"> <br> Finished tracking your mood? <a href="/log">Start logging your mood!</a></h2>
+
+    </div>
+
+
+
+    <%- include('common/footer'); %>

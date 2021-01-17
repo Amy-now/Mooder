@@ -1,0 +1,241 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body class="container">
+
+
+    <div class="row">
+
+        <div class="col-2">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/homepage">Go back</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-2 offset-5">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="DeleteAccount()" id="buttonAccDelete" href="/deletepage">Delete
+                        Account</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/updateemailpage">Update Details</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <form class="container-fluid" action="" method="POST">
+
+            <h1 class="col-12"> Settings</h1>
+
+            <div class="row">
+                <h1 class="col-12"> Choose your colours: </h1>
+            </div>
+
+            <div class="row">
+                <p> <br> </p>
+            </div>
+
+
+
+
+            
+            <div class="row ">
+
+                <!-- Happy -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="happyButton" placeholder="Input current hex : <%=settings.happy%>" style="background-color: <%=settings.happy%> ;">
+                    <input class="form-control setcol" type="text" name="newHappyButton" placeholder="Input Hex for new colour">
+                    <p>Happy</p>
+                </div>
+
+                <!-- anxious -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="anxiousButton" placeholder="Input current hex :<%=settings.anxious%>" style="background-color: <%=settings.anxious%> ;">
+                    <input class="form-control setcol" type="text" name="newAnxiousButton" placeholder="Input Hex for new colour">
+                    <p>Anxious</p>
+                </div>
+
+                <!-- sad -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="sadButton" placeholder="Input current hex : <%=settings.sad%>" style="background-color: <%=settings.sad%> ;">
+                    <input class="form-control setcol" type="text" name="newSadButton" placeholder="Input Hex for new colour">
+                    <p>Sad</p>
+                </div>
+
+                <!-- excited -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="excitedButton" placeholder="Input current hex : <%=settings.excited%>" style="background-color: <%=settings.excited%> ;">
+                    <input class="form-control setcol" type="text" name="newExcitedButton" placeholder="Input Hex for new colour">
+                    <p>Excited</p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row mt-3">
+
+                <!-- Tired  -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="tiredButton" placeholder="Input current hex : <%=settings.tired%>" style="background-color: <%=settings.tired%> ;">
+                    <input class="form-control setcol" type="text" name="newTiredButton" placeholder="Input Hex for new colour">
+                    <p>Tired</p>
+                </div>
+
+
+
+                <!-- average  -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="averageButton" placeholder="Input current hex : <%=settings.average%>" style="background-color: <%=settings.average%> ;">
+                    <input class="form-control setcol" type="text" name="newAverageButton" placeholder="Input Hex for new colour">
+                    <p>Average</p>
+                </div>
+
+
+
+
+                <!-- angry  -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="angryButton" placeholder="Input current hex : <%=settings.angry%>" style="background-color: <%=settings.angry%> ;">
+                    <input class="form-control setcol" type="text" name="newAngryButton" placeholder="Input Hex for new colour">
+                    <p>Angry</p>
+                </div>
+
+
+
+                <!-- Lonely -->
+                <div class="col-3">
+                    <input class="form-control setcol" type="text" name="lonelyButton" placeholder="Input current hex : <%=settings.lonely%>" style="background-color: <%=settings.lonely%> ;">
+                    <input class="form-control setcol" type="text" name="newLonelyButton" placeholder="Input Hex for new colour">
+                    <p>lonely</p>
+                </div>
+
+            </div>
+
+            
+
+            <div class="row">
+                <button class="col-8 offset-2 text-center btn btn-primary">Change colour <i
+                        class="fa fa-chevron-right"></i> </button>
+            </div>
+
+        </form>
+
+        <script>
+            const User = require("./models/user");
+
+            function changeColours() {
+
+                var happyButton = document.getElementById("happyButton").value
+                console.log(happyButton);
+                let errors = [];
+
+                const query = { "happy": happyButton };
+                const update = { "happy": happyButton };
+                const options = { "upsert": false };
+
+                User.updateOne(query, update, options)
+                    .then(result => {
+                        const { matchedCount, modifiedCount } = result;
+                        if (matchedCount && modifiedCount) {
+                            console.log(`Successfully added a new review.`)
+                        }
+                    })
+                    .catch(err => console.error(`Failed to add review: ${err}`))
+
+            }
+
+//  const { happyButton, newHappyButton,  anxiousButton, sadButton, excitedButton, tiredButton, averageButton, angryButton, lonelyButton } = req.body;
+
+
+        </script>
+
+        <script>
+
+
+            function changeHappyInButtonBg(color) {
+                document.getElementById("showColourHappy").style.background = color;
+            }
+            function changeHappyOutButtonBg(color) {
+                document.getElementById("showColourHappyButton").style.background = color;
+            }
+
+
+            function changeAnxiousInButtonBg(color) {
+                document.getElementById("showColourAnxious").style.background = color;
+            }
+            function changeAnxiousOutButtonBg(color) {
+                document.getElementById("showColourAnxiousButton").style.background = color;
+            }
+
+
+            function changeSadInButtonBg(color) {
+                document.getElementById("showColourSad").style.background = color;
+            }
+            function changeSadOutButtonBg(color) {
+                document.getElementById("showColourSadButton").style.background = color;
+            }
+
+
+            function changeExcitedInButtonBg(color) {
+                document.getElementById("showColourExcited").style.background = color;
+            }
+            function changeExcitedOutButtonBg(color) {
+                document.getElementById("showColourExcitedButton").style.background = color;
+            }
+
+
+            function changeTiredInButtonBg(color) {
+                document.getElementById("showColourTired").style.background = color;
+            }
+            function changeTiredOutButtonBg(color) {
+                document.getElementById("showColourTiredButton").style.background = color;
+            }
+
+
+            function changeAverageInButtonBg(color) {
+                document.getElementById("showColourAverage").style.background = color;
+            }
+            function changeAverageOutButtonBg(color) {
+                document.getElementById("showColourAverageButton").style.background = color;
+            }
+
+
+            function changeAngryInButtonBg(color) {
+                document.getElementById("showColourAngry").style.background = color;
+            }
+            function changeAngryOutButtonBg(color) {
+                document.getElementById("showColourAngryButton").style.background = color;
+            }
+
+
+            function changeLonelyInButtonBg(color) {
+                document.getElementById("showColourLonely").style.background = color;
+            }
+            function changeLonelyOutButtonBg(color) {
+                document.getElementById("showColourLonelyButton").style.background = color;
+            }
+
+
+        </script>
+
+
+        <%- include('common/footer'); %>

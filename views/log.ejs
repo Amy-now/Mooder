@@ -1,0 +1,269 @@
+<%- include('common/header2'); %>
+
+<style>
+  .happy-box {background-color: <%=log.happy%> }
+  .anxious-box {background-color: <%=log.anxious%>}
+  .sad-box {background-color: <%=log.sad%>}
+  .excited-box {background-color: <%=log.excited%>}
+  .tired-box {background-color: <%=log.tired%>}
+  .average-box {background-color: <%=log.average%>}
+  .angry-box {background-color: <%=log.angry%>}
+  .lonely-box {background-color: <%=log.lonely%>}
+
+</style>
+
+<div class="row">
+  <h1 class="col"> How are you feeling today? </h1>
+</div>
+
+<div class="row ">
+
+  <button class="col-3 amy-img-btn img-responsive happy-box" data-toggle="modal" data-target="#happyModal">
+    <img src="img/happy.jpg" alt="happy face">
+    <p>Happy</p>
+  </button>
+  <div class="modal" id="happyModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Happy!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive anxious-box" data-toggle="modal" data-target="#anxiousModal">
+    <img src="img/anxious.jpg" alt="anxious face">
+    <p>Anxious</p>
+  </button>
+
+  <div class="modal" id="anxiousModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Anxious!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive sad-box" data-toggle="modal" data-target="#sadModal">
+    <img src="img/sad.jpg" alt="sad face">
+    <p>Sad</p>
+  </button>
+
+  <div class="modal" id="sadModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Sad!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive excited-box" data-toggle="modal" data-target="#excitedModal">
+    <img src="img/excited.jpg" alt="excited face">
+    <p>Excited</p>
+  </button>
+
+  <div class="modal" id="excitedModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Excited!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row ">
+  <button class="col-3 amy-img-btn img-responsive tired-box" data-toggle="modal" data-target="#tiredModal">
+    <img src="img/tired.jpg" alt="tired face">
+    <p>Tired</p>
+  </button>
+
+  <div class="modal" id="tiredModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Tired!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive average-box" data-toggle="modal" data-target="#mehModal">
+    <img src="img/meh.jpg" alt="meh/average face">
+    <p>Average</p>
+  </button>
+
+  <div class="modal" id="mehModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Average!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive angry-box" data-toggle="modal" data-target="#angryModal">
+    <img src="img/angry.jpg" alt="angry face">
+    <p>Angry</p>
+  </button>
+
+  <div class="modal" id="angryModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Angry!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="col-3 offet-5 amy-img-btn img-responsive lonely-box" data-toggle="modal" data-target="#lonelyModal">
+    <img src="img/lonely.jpg" alt="lonely face">
+    <p>Lonely</p>
+  </button>
+
+  <div class="modal" id="lonelyModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">You are feeling Lonely!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Whats making you feel this way?"></textarea>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Choose another mood!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h2 class="col"> Finished logging your mood? <a href="/track">View your mood chart!</a></h2>
+</div>
+
+
+
+<%- include('common/footer'); %>

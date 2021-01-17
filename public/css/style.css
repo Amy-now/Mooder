@@ -1,0 +1,151 @@
+
+nav ul {float: right;
+        padding-left: 645px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+    margin-top: 9;
+}
+
+.mooder{font-size: 350%;}
+
+h1 {color:rgb(4, 214, 214); text-align: center; padding-top: 3%; font-size: 150%;}
+
+.h1, h1 {
+    font-size: 89px;
+}
+
+p {
+    font-size: large;
+    color: rgb(0, 114, 114); text-align: center;
+}
+
+.btn:not(:disabled).amy-nav-btn{
+    cursor: pointer;
+    padding: 50px;
+}
+
+.amy-img-btn{
+    border: none;
+}
+
+
+
+
+.amy-happy-btn{
+    border: none;
+    background-color: #FF0; 
+    width: 20%; 
+    height: auto;
+}
+
+.amy-anxious-btn{
+    border: none;
+    background-color: #59C959;
+}
+
+.amy-sad-btn{
+    border: none;
+    background-color: #040AFF;
+}
+
+.amy-excited-btn{
+    border: none;
+    background-color:#FF00F7;
+}
+
+.amy-tired-btn{
+    border: none;
+    background-color: #00FDFF;
+}
+
+.amy-average-btn{
+    border: none;
+    background-color: #FFAD00;
+}
+
+.amy-angry-btn{
+    border: none;
+    background-color: #FF0000;
+}
+
+.amy-lonely-btn{
+    border: none;
+    background-color: #9800FF;
+}
+
+h2 {color:rgb(4, 214, 214); text-align: center; font-size: 150%; padding-top: 2%;}
+
+.h2, h2 {
+    font-size: 89px;
+}
+
+h4 {color:rgb(0, 114, 114); text-align: center; font-size: 150%;}
+
+p {font-family: monospace; font-size: 200% ;}
+
+.nav-title {padding-top: none;}
+
+
+.yellow {background-color: #FF0; border: none; border-radius: 12px;} 
+.yellow:hover {background-color: rgb(201, 201, 0); border-radius: 12px;}
+
+.green {background-color: #59C959; border: none; border-radius: 12px;}
+.green:hover {background-color: rgb(68, 153, 68); border-radius: 12px;}
+ 
+.blue {background-color: #040AFF; border: none; border-radius: 12px;}
+.blue:hover {background-color: rgb(3, 3, 194); border-radius: 12px;}
+
+.pink {background-color: #FF00F7; border: none; border-radius: 12px;}
+.pink:hover {background-color: rgb(185, 1, 145); border-radius: 12px;}
+
+.light-blue {background-color:#00FDFF; border: none; border-radius: 12px;}
+.light-blue:hover {background-color: rgb(138, 175, 187); border-radius: 12px;}
+
+.orange {background-color:#FFAD00; border: none; border-radius: 12px;}
+.orange:hover {background-color: rgb(212, 97, 3); border-radius: 12px;}
+
+.red {background-color: #FF0000; border: none; border-radius: 12px;}
+.red:hover {background-color: rgb(206, 3, 3); border-radius: 12px;}
+
+.purple {background-color:#9800FF; border: none; border-radius: 12px;}
+.purple:hover {background-color: rgb(94, 16, 167); border-radius: 12px;}
+
+.grey {background-color: #D2D2D2; border: none; border-radius: 12px;}
+.grey:hover {background-color: rgb(133, 132, 132); border-radius: 12px;}
+
+.light-pink {background-color:#FFA4FD ; border: none; border-radius: 12px;}
+.light-pink:hover {background-color:rgb(197, 116, 173); border-radius: 12px;}
+
+.lilac {background-color: #C987E4  ; border: none ; border-radius: 12px;}
+.lilac:hover {background-color:rgb(175, 99, 194) ; border-radius: 12px;}
+
+.teal {background-color: #1BF7D4 ; border: none; border-radius: 12px;}
+.teal:hover {background-color: rgb(34, 152, 182); border-radius: 12px;}
+
+
+.days {font-size: 20px;}
+
+.box {
+    height: 50px;
+    width: 25px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+  }
+  
+  .red-tracker {
+    background-color: red;
+  }
+  
+  .green-tracker {
+    background-color: green;
+  }
+  
+  .blue-tracker {
+    background-color: blue;
+  }
+
+.happy-box {border: lawngreen;}
+

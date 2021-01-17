@@ -1,0 +1,19 @@
+<%- include('common/header2'); %>
+
+<div class=" jumbotron jumbotron-fluid bg-transparent">
+    <div class="row">
+        <h1 class=" col-12 display-1">Welcome <%=username%> </h1>
+        <p class="col-12 lead">How are you today?</p>
+    </div>
+</div>
+<div class="row amy-nav">
+    <div class="col-4 offset-1">
+        <a href="/track" class="btn btn-info btn-lg btn-block btn-huge amy-nav-btn">Track your mood</a>
+    </div>
+    
+    <div class="col-4 offset-2 ">
+        <a href="/log" class="btn btn-info btn-lg btn-block btn-huge amy-nav-btn">log your mood</a>
+    </div>
+</div>
+
+<%- include('common/footer'); %>
