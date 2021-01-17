@@ -1,4 +1,4 @@
-# mooder
+# Mooder
 University project for tracking moods. 
 
 The app is live here https://secret-wave-95401.herokuapp.com/
